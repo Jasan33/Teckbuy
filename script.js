@@ -21,7 +21,7 @@ function signup() {
   let signupText = document.getElementById("signup_here");
   let logInfo = document.getElementById("log_information");
 
-  if (signupInfo.style.display === "none" ) {
+  if (signupInfo.style.display === "none") {
       signupInfo.style.display = "block";
       signupText.textContent = "Log in here";
       logInfo.style.display = "none";
