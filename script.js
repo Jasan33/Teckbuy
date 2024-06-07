@@ -23,11 +23,11 @@ function signup() {
 
   if (signupInfo.style.display === "none" ) {
       signupInfo.style.display = "block";
-      signupText.textContent = "Log in";
+      signupText.textContent = "Log in here";
       logInfo.style.display = "none";
   } else {
       signupInfo.style.display = "none";
-      signupText.textContent = "Signup here";
+      signupText.textContent = "Sign up here";
       logInfo.style.display = "block";
   }
 }
