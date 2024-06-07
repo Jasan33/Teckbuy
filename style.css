@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 750;
+    padding: 30px;
+    background-color: #dfd5bbb3;
+    color: #707070;
+    box-shadow: 3px 3px 10px;
+    margin-bottom: 60px;
+    text-decoration: none;
+}
+
+
+.home {
+    cursor: pointer;
+    text-decoration: none;
+    color: #707070;
+}
+
+.discover {
+    cursor: pointer;
+    text-decoration: none;
+    transition-delay: 400ms;
+    color: #707070;
+}
+
+.order {
+    cursor: pointer;
+    text-decoration: none;
+    color: #707070;
+}
+
+.about_us {
+    cursor: pointer;
+    text-decoration: none;
+    color: #707070;
+}
+
+:hover.home {
+    text-decoration: underline; 
+    transition: o.8s ease;
+    color: #707070ae;
+    text-decoration: none;
+}
+
+:hover.discover {
+    transition: 0.8s ease;
+    color: #707070ae;
+    text-decoration: none;
+}
+
+:hover.order {
+    transition: 0.8s ease;
+    color: #707070ae;
+    text-decoration: none;
+}
+
+:hover.about_us {
+    transition: 0.8s ease;
+    color: #707070ae;
+    text-decoration: none;
+}
+
+@media all and (max-width: 1000px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        background-color: #dfd5bb;
+        font-size: larger;
+        margin-left: -20px;
+        padding: 35px;
+        box-shadow: 6px -6px 10px 6px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .header {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        margin: 0;
+        background-color: #dfd5bb;
+        font-size: larger;
+        margin-left: -30px;
+        padding: 35px;
+        box-shadow: 6px -6px 10px 6px;
+    }
+}
+
+@media all and (min-width: 1900px) {
+    .header {
+        padding: 45px;
+        font-size: 30px;
+    }
+}
+
+/* Navbar */
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.TB_logo {
+    width: 120px;
+}
+
+:hover.TB_logo {
+    transform: scale(120%);
+}
+
+.search_bar {
+    width: 550px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 40px;
+    font-size: 20px;
+    cursor: text;
+    border: 2px solid #000000;
+    padding-left: 10px;
+}
+
+
+.button_meny {
+    flex-direction: column;
+}
+
+#meny {
+    padding-block-end: 700px;
+    margin-top: 30px;
+    transform: ease 15s;
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(165, 161, 161);
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+}
+
+.Logg_inn {
+    width: 100px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+:hover.Logg_inn {
+    transform: scale(120%);
+}
+
+.loginn_loginn {
+    flex-direction: column;
+}
+
+#loginn {
+    padding: 25px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(141, 139, 139);
+    margin-top: 5px;
+    margin-left: -500px;
+    border-radius: 25px;
+    display: none;
+    position: absolute;
+}
+
+.log_information {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sign_up_information {
+    display: none;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#forgot {
+    display: none;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-left: 3px;
+}
+
+.checkmark2 {
+  padding: 10px;
+}
+
+#signup_here {
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+.log_in_bar {
+    width: 450px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 40px;
+    font-size: 25px;
+    cursor: text;
+    border: 2px solid #000000;
+    padding-left: 10px;
+}
+
+
+@media all and (max-width: 580px) {
+    .navbar {
+        transform: scale(80%);
+        gap: 5%;
+        margin-left: -50px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .navbar {
+        transform: scale(75%);
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .button_meny {
+        margin-left: -35px;
+    }
+}
+
+
+@media all and (min-width: 1900px) {
+    .navbar {
+        justify-content: space-around;
+    }
+}
+
+@media all and (min-width: 1900px) {
+    .search_bar {
+        width: 1000px;
+        font-size: 30px;
+    }
+}
+
+
+@media all and (max-width: 510px) {
+    .search_bar {
+        position: absolute;
+        margin-top: 90px;
+        width: 450px;
+        height: 50px;
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .search_bar {
+        position: absolute;
+        margin-top: 90px;
+        width: 400px;
+        height: 50px;
+        font-size: 35px;
+    }
+}
+
+@media all and (max-width: 510px) {
+    .navbar {
+        gap: 20vw;
+        justify-content: center;
+        margin-bottom: 30px;
+        margin: 10px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #loginn {
+        margin-left: -175px;
+        width: 200px;
+        padding: 40px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .Loggin_informasjon {
+        width: 150%;
+    }
+}
+
+.bars {
+    width: 45px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+:hover.bars {
+    transform: scale(120%);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17.5px;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+@media all and (max-width: 1000px) {
+    .navigation {
+        transform: scale(90%);
+        gap: 5%;
+        margin-top: 20px;
+        overflow-x: scroll;
+    }
+}
+
+.Gaming_and_pc {
+    cursor: pointer;
+}
+
+.Mobil_and_tablets {
+    cursor: pointer;
+}
+
+.tv_and_sound {
+    cursor: pointer;
+}
+
+.Smartwatch_and_clocks {
+    cursor: pointer;
+}
+
+.Usb_and_harddrive {
+    cursor: pointer;
+}
+
+.Wifi_and_router {
+    cursor: pointer;
+}
+
+/* ad */
+
+.Ad {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    width: 50%;
+    width: 95%;
+}
+
+.horizontal_ad {
+    display: none;
+}
+
+@media all and (max-width: 800px) {
+    .Ad {
+        display: none;
+    }
+}
+
+@media all and (max-width: 800px) {
+    .horizontal_ad {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50px;
+        width: 50%;
+        width: 95%;
+        margin-top: -30px;
+    }
+}
+
+.weekly_deals {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(254, 237, 47);
+    margin: 0;
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+/* choise material */
+
+.choice_meteral {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#Iphone {
+    display: none;
+    position: absolute;
+    padding: 200px;
+    margin-top: -100px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.buy_Iphone {
+    display: flex;
+    margin-top: -100px;
+    gap: 100px;
+    
+}
+
+.Iphone_h1 {
+    margin-top: 100px;
+}
+
+.Iphone_selection {
+    width: 690px;
+}
+
+.Selection_x {
+    position: absolute;
+    width: 80px;
+    margin: -130px;
+}
+
+:hover.Selection_x {
+    scale: 120%;
+}
+
+@media all and (max-width: 1000px) {
+    #Iphone {
+        padding: 0px;
+        width: 30px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .buy_Iphone {
+        padding: 0px;
+        width: 50px;
+    }
+}
+
+#Gaming_pc {
+    display: none;
+    position: absolute;
+    padding: 160px;
+    margin-top: -100px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.Gaming_pc_h1 {
+    margin-top: 150px;
+}
+
+.Gaming_pc_selection {
+    width: 600px;
+}
+
+.buy_gaming_pc {
+    display: flex;
+    margin-top: -100px;
+    gap: 180px;
+}
+
+#TV {
+    display: none;
+    position: absolute;
+    padding: 240px;
+    margin-top: -100px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.TV_selection {
+    width: 680px;
+}
+
+.TV_h1 {
+    margin-top: 30px;
+}
+
+.buy_TV {
+    display: flex;
+    margin-top: -100px;
+    gap: 150px;
+}
+
+#Apple_vision {
+    display: none;
+    position: absolute;
+    padding: 200px;
+    margin-top: -100px;
+    border-radius: 15px;
+    background-color: aliceblue;
+}
+
+.Apple_vision_selection {
+    width: 620px;
+}
+
+.buy_Apple_vision {
+    display: flex;
+    margin-top: -100px;
+    gap: 100px;
+}
+
+@media all and (max-width: 1000px) {
+    .choice_meteral {
+        gap: 5%;
+        overflow-x: scroll;
+        overflow-x: auto;
+        margin-top: -2%;
+    }
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 50px;
+    background-color: rgb(5, 209, 249);
+    display: flex;
+}
+
+.container_1 {
+    flex-direction: column;
+}
+
+.container_2 {
+    flex-direction: column;
+}
+
+.main_contact {
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main_contact_2 {
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.main_contact_3 {
+    font-size: 15px;
+    margin-left: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main_contact_4 {
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.contact {
+    font-size: 30px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer_containter_2 {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 20px;
+}
+
+.profile_photo {
+    width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    background-color: #00000021;
+}
+
+@media all and (max-width: 1000px) {
+    .container_2 {
+        margin-top: 70px;
+
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .footer_containter_2 {
+       margin-top: 70px;
+       margin-bottom: 70px;
+       margin-left: 50px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .footer {
+        flex-direction: column;
+        margin-left: -50px;
+    }
+}
+

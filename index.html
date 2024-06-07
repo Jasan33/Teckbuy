@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech buy</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header"> <!-- Header -->
+        <a class="home" href="Index.html">Home</a>
+        <a class="discover" href="index.html#weekly_deals">Discover</a>
+        <a class="order" target="_blank" href="https://www.ordernow.pizza/menu">Order</a>
+        <a class="about_us" href="index.html#footer">About us</a>
+    </div>
+    <div class="navbar"> <!-- navbar -->
+        <div><a href="Index.html"><img src="Bilder/TeckBuy_main_logo.svg" class="TB_logo" alt="tech buy's logo"></div>
+        </a>
+        <input placeholder="search.." type="text" class="search_bar">
+        <div class="button_meny">
+            <div><a><img onclick="Meny()" src="Bilder/bars.svg" class="bars" alt="meny"></div></a>
+            <div id="meny">
+                Meny coming soon!
+            </div>
+        </div>
+        <div class="loginn_loginn">
+            <div><a><img onclick="loginn()" src="Bilder/log_inn.png" class="Logg_inn"
+                        alt="Logg inn eller signer deg her">
+            </div></a>
+            <div id="loginn">
+                <div class="log_information" id="log_information">
+                    <h1>Log in here</h1>
+                    <input placeholder="Email or Username" type="text" class="log_in_bar">
+                    <input placeholder="Password" type="password" class="log_in_bar">
+                    <p onclick="forgot()">Forgot password?</p>
+                    <div id="forgot">
+                        <p>hi</p>
+                    </div>
+                </div>
+                <p onclick="signup()" id="signup_here">Signup here</p>
+                <div class="sign_up_information" id="signup">
+                    <h1>Sign in here</h1>
+                    <input placeholder="Username" type="text" class="log_in_bar">
+                    <input placeholder="Email" type="email" class="log_in_bar">
+                    <input placeholder="Verify Email" type="text" class="log_in_bar">
+                    <input placeholder="Password" type="password" class="log_in_bar">
+                    <input placeholder="Retype Password" type="password" class="log_in_bar">
+                    <input placeholder="" type="date" class="log_in_bar">
+                    <p class="checkmark2"><input placeholder="" type="checkbox" class="checkmark"> I verify the <a target="_blank" href="https://www.visma.com/globalassets/global/visma.com/visma_saas_terms.pdf">TOS</a> Rules </p>
+                    <input placeholder="" type="submit" class="submit">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="navigation"> <!-- Navigation -->
+        <div><img width="180px" height="200px" src="Bilder/Gaming_and_console.svg" class="Gaming_and_pc"
+                alt="Gaming, consoles and pcs">
+            <p>Gaming and Console</p>
+        </div>
+        <div><img width="180px" height="200px" src="Bilder/mobile_and_tablets.svg" class="Mobil_and_tablets"
+                alt="Mobil and tablets">
+            <p>Mobil and Tablets</p>
+        </div>
+        <div><img width="180px" height="200px" src="Bilder/tv_and_sound.svg" class="tv_and_sound" alt="Tv and Sound">
+            <p>Tv and sound</p>
+        </div>
+        <div><img width="180px" height="200px" src="Bilder/Smartwatch_and_clocks.svg" class="Smartwatch_and_clocks"
+                alt="Smartwatch and clocks">
+            <p>Smartwatch and clocks</p>
+        </div>
+        <div><img width="180px" height="200px" src="Bilder/usb_and_handdrive.svg" class="Usb_and_harddrive"
+                alt="USB and Harddrives">
+            <p>USB and Harddrives</p>
+        </div>
+        <div><img width="180px" height="200px" src="Bilder/wifi_router.svg" class="Wifi_and_router"
+                alt="Wifi and routers">
+            <p>Wifi and routers</p>
+        </div>
+    </div>
+    <div class="ad">
+        <div><img src="Bilder/Sumer_sale_ad.png" class="Ad" alt="A summer ad"></div>
+        <div><img src="Bilder/horizontal_ad.png" class="horizontal_ad" alt="A summer ad"></div>
+    </div>
+    <h1 class="weekly_deals" id="weekly_deals">Weekly Deals!</h1>
+    <!-- Choice materal -->
+    <div class="choice_meteral">
+        <div class="Iphone"><img onclick="Iphone()" src="Bilder/Iphone_15.png" alt="Iphone_for_12500"></div>
+        <div id="Iphone">
+            <img src="Bilder/xmark.svg" onclick="X_Iphone()" class="Selection_x" alt="xmark">
+            <div class="buy_Iphone">
+                <div><img src="Bilder/Iphone_15_transparent.png" class="Iphone_selection" alt="Iphone_selection"></div>
+                <div>
+                    <h1 class="Iphone_h1">Iphone 15 max pro</h1>
+                    <p>Add to cart</p>
+                    <p>6,7 Super Retina XDR</p>
+                    <p>48+12+12mp triple camera</p>
+                    <p>A17 pro Bionic prossor</p>
+                    <img src="Bilder/Iphone_colors.png" class="Iphone_colors" alt="select_a_color">
+                </div>
+            </div>
+        </div>
+        <!-- Gaming pc -->
+        <div class="Gaming_pc"><img onclick="Gaming_pc()" src="Bilder/pc.png" alt="Gaming_pc_for_1000"></div>
+        <div id="Gaming_pc">
+            <img src="Bilder/xmark.svg" onclick="X_gaming_pc()" class="Selection_x" alt="xmark">
+            <div class="buy_gaming_pc">
+                <div><img src="Bilder/Gaming_pc_transparent.png" class="Gaming_pc_selection" alt="gaming_pc_selection">
+                </div>
+                <div>
+                    <h1 class="Gaming_pc_h1">Buy Gaming pc</h1>
+                    <p>Add to cart</p>
+                    <p>16gb Ram</p>
+                    <p>Core i5-10400f</p>
+                    <p>Amd radeon Rx 580 8GB</p>
+                    <img src="Bilder/Gaming_pc_colors.png" class="Gaming_pc_colors" alt="select_a_color">
+                </div>
+            </div>
+        </div>
+        <!-- TV -->
+        <div class="TV"><img onclick="TV()" src="Bilder/tv.png" alt="Television_for_900"></div>
+        <div id="TV">
+            <img src="Bilder/xmark.svg" onclick="X_TV()" class="Selection_x" alt="xmark">
+            <div class="buy_TV">
+                <div><img src="Bilder/Tv_transparent.png" class="TV_selection" alt="Television_selection"></div>
+                <div>
+                    <h1 class="TV_h1">Buy Ultra Hd Tv</h1>
+                    <p>Add to cart</p>
+                    <p>4k UHD</p>
+                    <p>Screen Size 139cm (55)</p>
+                    <p>HDR (High Dynamic Range)</p>
+                </div>
+            </div>
+        </div>
+        <!-- Apple_vision -->
+        <div class="Apple_vision"><img img onclick="Apple_vision()" src="Bilder/Apple_vision_pro.png"
+                alt="Apple_vision_pro_for_4000_15%_off"></div>
+        <div id="Apple_vision">
+            <img src="Bilder/xmark.svg" onclick="X_Apple_vision()" class="Selection_x" alt="xmark">
+            <div class="buy_Apple_vision">
+                <div><img src="Bilder/apple-vision-pro-features.png" class="Apple_vision_selection"
+                        alt="Apple_vision_selection"></div>
+                <div>
+                    <h1 class="Apple_vision_h1">Buy Apple Vision pro</h1>
+                    <p>Add to cart</p>
+                    <p>Capacity (256GB, 512GB, 1T)</p>
+                    <p>23000000 Pixels</p>
+                    <p>Refresh rate (90Hz - 100Hz)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="footer"> <!-- Footer -->
+        <div class="container_1">
+            <div class="main_contact">
+                <h2 class="contact">Contact</h2>
+                <p>Email: jagia005@osloskolen.no</p>
+                <p>Tlf: +47 45884352</p>
+            </div>
+            <div class="main_contact_2">
+                <h2 class="contact">Copyright</h2>
+                <p>Check out our Desgn</p>
+                <p><a class="here" href="https://fuchsia-merilee-76.tiiny.site" target="_blank">here</a></p>
+            </div>
+        </div>
+        <div class="container_2">
+            <div class="main_contact_3">
+                <h2 class="contact">Apple Sponsor</h2>
+                <p>check them out <a class="here" href="https://www.apple.com" target="_blank">here</a> </p>
+                <p>Tlf: +1 800–692–7753</p>
+            </div>
+            <div class="main_contact_4">
+                <h2 class="contact">User guidence</h2>
+                <p>Check out</p>
+                <a class="here" href="https://emerald-loretta-48.tiiny.site" target="_blank">LAN user guidence</a>
+            </div>
+        </div>
+        <div class="footer_containter_2">
+            <p>made by <a class="here" href="https://jasan33.github.io/Jasan/Index.html" target="_blank">Jasan</a></p>
+            <div> <img src="Bilder/Picture_of_Jasan_short.png" class="profile_photo" alt="Navigation bar"></div>
+            <p>Email: jagia005@osloskolen.no</p>
+        </div>
+    </div>
+</body>
+
+</html>
