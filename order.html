@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your orders</title>
     <link rel="stylesheet" href="Style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="header"> <!-- samme header som index siden-->
@@ -21,14 +22,14 @@
         <div class="your_orders_right">
             <h1 class="complete_purchase">Complete Purchase</h1>
             <div class="paypal_output">
-                <input placeholder="Username" class="paypal_radio" type="radio">
+                <input placeholder="Username" onclick="paypal()" class="paypal_radio" type="radio">
                 <img src="Bilder/PayPal_PNG.png" class="paypal" alt="use paypal to pay">
             </div>
             <div class="card_output">
-                <input placeholder="Username" class="paypal_radio" type="radio">
+                <input placeholder="Username" onclick="card()" class="paypal_radio" type="radio">
                 <img src="Bilder/card.png" class="card" alt="use card to pay by either visa, mastercard ">
             </div>
-            <div class="order_detals">
+            <div class="order_detals" id="IDcard">
                 <p>Card Number</p>
                 <input placeholder="XXX XXXX XXXX XXXX" class="card_detals" type="text">
                 <div class="CVC_EXP">
@@ -42,6 +43,30 @@
                     </div>
                 </div>
             </div>
+            <div id="IDpaypal">
+                <div class="First_last">
+                    <div>
+                        <p>First name</p>
+                        <input placeholder="John" class="input_cvc_exp" type="text">
+                    </div>
+                    <div>
+                        <p>Last name</p>
+                        <input placeholder="Doe" class="input_cvc_exp" type="text">
+                    </div>
+                </div>
+                <p>Card Number</p>
+                <input placeholder="XXX XXXX XXXX XXXX" class="card_detals" type="text">
+                <div class="CVC_EXP">
+                    <div>
+                        <p>CVC</p>
+                        <input placeholder="XXX" class="input_cvc_exp" type="text">
+                    </div>
+                    <div>
+                        <p>Expire date</p>
+                        <input placeholder="X/X" class="input_cvc_exp" type="text">
+                    </div>
+            </div>
+            <p placeholder="Username" type="radio">Save card for faster checkouts?</p>
         </div>
     </div>
 </body>

@@ -2,6 +2,7 @@ function Meny() {
     let y = document.getElementById("meny");
     if (y.style.display === "none") {
       y.style.display = "block";
+      document.getElementById("loginn").style.display = "none";
     } else {
       y.style.display = "none";
     }
@@ -11,6 +12,7 @@ function loginn() {
     let x = document.getElementById("loginn");
     if (x.style.display === "none") {
       x.style.display = "block";
+      document.getElementById("meny").style.display = "none";
     } else {
       x.style.display = "none";
     }
@@ -112,3 +114,23 @@ function X_Apple_vision() {
       x.style.display = "none";
     }
   }
+
+function paypal() {
+    let x = document.getElementById("IDpaypal");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      document.getElementById("IDcard").style.display = "none";
+    } else {
+      x.style.display = "none";
+    }
+}
+
+function card() {
+  let x = document.getElementById("IDcard");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById("IDpaypal").style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}

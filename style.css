@@ -728,6 +728,10 @@
     margin: -5px;
 }
 
+.IDcard {
+    display: block;
+}
+
 .order_detals {
     border-top: 0;
     border-style: solid;
@@ -748,9 +752,24 @@
     gap: 20px;
 }
 
+.First_last {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+}
+
 .input_cvc_exp {
     width: 180px;
     height: 25px;
     border-radius: 10px;
     padding-left: 5px;
+}
+
+#IDpaypal {
+    display: none;
+    border-top: 0;
+    border-style: solid;
+    border-color: #0000007e;
+    padding: 20px;
 }
