@@ -15,13 +15,33 @@
     </div>
     <div class="your_orders_main">
         <div class="your_orders_left">
-            <h1>Your orders</h1>
+            <h1 class="Your_orders">Your orders</h1>
             <p>Back to shopping?</p>
         </div>
         <div class="your_orders_right">
-            <h1>Your orders</h1>
-            <p>Back to shopping?</p>
-            <input placeholder="Username" type="text" class="card_number">
+            <h1 class="complete_purchase">Complete Purchase</h1>
+            <div class="paypal_output">
+                <input placeholder="Username" class="paypal_radio" type="radio">
+                <img src="Bilder/PayPal_PNG.png" class="paypal" alt="use paypal to pay">
+            </div>
+            <div class="card_output">
+                <input placeholder="Username" class="paypal_radio" type="radio">
+                <img src="Bilder/card.png" class="card" alt="use card to pay by either visa, mastercard ">
+            </div>
+            <div class="order_detals">
+                <p>Card Number</p>
+                <input placeholder="XXX XXXX XXXX XXXX" class="card_detals" type="text">
+                <div class="CVC_EXP">
+                    <div>
+                        <p>CVC</p>
+                        <input placeholder="XXX" class="input_cvc_exp" type="text">
+                    </div>
+                    <div>
+                        <p>Expire date</p>
+                        <input placeholder="X/X" class="input_cvc_exp" type="text">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

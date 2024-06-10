@@ -673,3 +673,84 @@
     }
 }
 
+.your_orders_main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.your_orders_right {
+    width: 500px;
+}
+
+.complete_purchase {
+    margin-left: 10%;
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: #000000b5;
+}
+
+.Your_orders {
+    font-size: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: #000000b5;
+}
+
+.paypal_output {
+    flex-direction: column;
+    border-style: solid;
+    border-color: #0000007e;
+    margin-top: 20px;
+}
+
+.paypal_radio {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+}
+
+.paypal {
+    width: 100px;
+    height: 30px;
+    margin: -5px;
+}
+
+.card_output {
+    flex-direction: column;
+    border-style: solid;
+    border-color: #0000007e;
+    border-top: 0;
+}
+
+.card {
+    width: 190px;
+    margin: -5px;
+}
+
+.order_detals {
+    border-top: 0;
+    border-style: solid;
+    border-color: #0000007e;
+    padding: 20px;
+}
+
+.card_detals {
+    padding-left: 5px;
+    width: 400px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.CVC_EXP {
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.input_cvc_exp {
+    width: 180px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
