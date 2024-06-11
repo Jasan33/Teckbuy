@@ -697,11 +697,18 @@
     color: #000000b5;
 }
 
+.information_payment {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000b6;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
 .paypal_output {
     flex-direction: column;
     border-style: solid;
     border-color: #0000007e;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .paypal_radio {
@@ -772,4 +779,62 @@
     border-style: solid;
     border-color: #0000007e;
     padding: 20px;
+}
+
+
+.billing {
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000b6;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.billing_information {
+    border-style: solid;
+    border-color: #0000007e;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.street_country {
+    width: 430px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+.City_state_zip {
+    display: flex;
+    gap: 20px;
+}
+
+.zip_state_city {
+    display: flex;
+    width: 125px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-bottom: 20px;
+}
+
+.final_click {
+    display: flex;
+    justify-content: center;
+    background-color: #39BAE2;
+    font-size: 20px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px;
+    border: #707070 1px;
+    border-style: solid;
+    border-radius: 12px;
+    width: 100px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 30px;
+    margin-left: 210px;
+    cursor: pointer;
+}
+
+.final_click p {
+    color: aliceblue;
 }

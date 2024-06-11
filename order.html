@@ -11,7 +11,7 @@
     <div class="header"> <!-- samme header som index siden-->
         <a class="home" href="Index.html">Home</a>
         <a class="discover" href="index.html#weekly_deals">Discover</a>
-        <a class="order" target="_blank" href="https://www.ordernow.pizza/menu">Order</a>
+        <a class="order" href="order.html">Order</a>
         <a class="about_us" href="index.html#footer">About us</a>
     </div>
     <div class="your_orders_main">
@@ -21,6 +21,7 @@
         </div>
         <div class="your_orders_right">
             <h1 class="complete_purchase">Complete Purchase</h1>
+            <p class="information_payment">Payment information</p>
             <div class="paypal_output">
                 <input placeholder="Username" onclick="paypal()" class="paypal_radio" type="radio">
                 <img src="Bilder/PayPal_PNG.png" class="paypal" alt="use paypal to pay">
@@ -67,6 +68,32 @@
                     </div>
             </div>
             <p placeholder="Username" type="radio">Save card for faster checkouts?</p>
+        </div>
+        <p class="billing">Billing Address</p>
+        <div class="billing_information">
+            <div class="country_street">
+                <p>Country</p>
+                <input placeholder="Norway" type="text" class="street_country">
+                <p>Street Address</p>
+                <input placeholder="Kuben vidregående" class="street_country" type="text">
+            </div>
+            <div class="City_state_zip">
+                <div>
+                    <p>City</p>
+                    <input placeholder="Oslo" type="text" class="zip_state_city">
+                </div>
+                <div>
+                    <p>State</p>
+                    <input placeholder="Oslo kommune" class="zip_state_city" type="text">
+                </div>
+                <div>
+                    <p>Zip code</p>
+                    <input placeholder="0001" class="zip_state_city" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="final_click">
+            <p>Pay 0</p>
         </div>
     </div>
 </body>
