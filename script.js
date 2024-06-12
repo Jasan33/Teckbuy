@@ -135,8 +135,96 @@ function card() {
   }
 }
 
+
 function Iphone_cart() {
-  let x = document.getElementById("/order.Iphone_checkout");
-  console.log("hi")
-  x.style.display = "block";
+  // setter Iphone I lokalt minne (local storage)
+  localStorage.setItem('iphoneInCart', 'true');
+  location.reload('order.html')
+  cost += 1000;
+
+  // Deretter går javascripten til order.html siden min
+  window.location.href = 'order.html';
+}
+document.addEventListener('DOMContentLoaded', (event) => {
+  // dobbelsjekker om at siden den er på er order.html
+  if (window.location.pathname.includes('order.html')) { 
+      // sjekker deretter lokalt storage for å finne iphone
+      if (localStorage.getItem('iphoneInCart') === 'true') {
+          //tilslutt viser den iphonen på sjermen
+          document.getElementById('Iphone_checkout').style.display = 'block';
+          //Tar frem trshcanen slik at man kan slette itemen
+          document.getElementById('trash2').style.display = 'block';
+    }
+  }
+});
+
+function Gaming_cart() {
+  localStorage.setItem('gamingInCart', 'true');
+  location.reload('order.html')
+  cost += 1000;
+
+  window.location.href = 'order.html';
+}
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname.includes('order.html')) { 
+      if (localStorage.getItem('gamingInCart') === 'true') {
+          document.getElementById('Gaming_checkout').style.display = 'block';
+          document.getElementById('trash3').style.display = 'block';
+    }
+  }
+});
+
+function Tv_cart() {
+  localStorage.setItem('tvInCart', 'true');
+  location.reload('order.html')
+  cost += 1000;
+
+  window.location.href = 'order.html';
+}
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname.includes('order.html')) { 
+      if (localStorage.getItem('tvInCart') === 'true') {
+          document.getElementById('Tv_checkout').style.display = 'block';
+          document.getElementById('trash4').style.display = 'block';
+    }
+  }
+});
+
+
+function Apple_cart() {
+  localStorage.setItem('appleInCart', 'true');
+  location.reload('order.html') 
+  cost += 1000;
+
+  window.location.href = 'order.html';
+}
+document.addEventListener('DOMContentLoaded', (event) => {
+  if (window.location.pathname.includes('order.html')) { 
+      if (localStorage.getItem('appleInCart') === 'true') {
+          document.getElementById('Apple_checkout').style.display = 'block';
+          document.getElementById('trash5').style.display = 'block';
+    }
+  }
+});
+
+
+//funksjon for trash knappen som fjerner item fra local storage
+function trash() {
+  localStorage.removeItem('iphoneInCart')
+  location.reload('order.html')  
+}
+
+function trash2() {
+  localStorage.removeItem('gamingInCart')
+  location.reload('order.html')  
+}
+
+function trash3() {
+  localStorage.removeItem('tvInCart')
+  location.reload('order.html')  
+}
+
+function trash4() {
+  localStorage.removeItem('appleInCart')
+  location.reload('order.html')  
 }

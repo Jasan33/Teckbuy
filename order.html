@@ -18,10 +18,22 @@
         <div class="your_orders_left">
             <h1 class="Your_orders">Your orders</h1>
             <div class="checkouts">
-                <img src="Bilder/Iphone_checkout.png" id="Iphone_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
-                <img src="Bilder/Gamingpc_checkout.png" id="Gaming_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
-                <img src="Bilder/TV_checkout.png" id="Tv_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
-                <img src="Bilder/Apple_vision_pro_checkout.png" id="Apple_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
+                <div id="trash">
+                    <img src="Bilder/Iphone_checkout.png" id="Iphone_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
+                    <img src="Bilder/bx-trash-alt.svg" id="trash2" onclick="trash()">
+                </div>
+                <div id="trash">
+                    <img src="Bilder/Gamingpc_checkout.png" id="Gaming_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
+                    <img src="Bilder/bx-trash-alt.svg" id="trash3" onclick="trash2()">
+                </div>
+                <div id="trash">
+                    <img src="Bilder/TV_checkout.png" id="Tv_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
+                    <img src="Bilder/bx-trash-alt.svg" id="trash4" onclick="trash3()">
+                </div>
+                <div id="trash">
+                    <img src="Bilder/Apple_vision_pro_checkout.png" id="Apple_checkout" class="Item_checkout" alt="Iphone_is_initem_checkout">
+                    <img src="Bilder/bx-trash-alt.svg" id="trash5" onclick="trash4()">
+                </div>
                 <a href="index.html#weekly_deals" class="Back"><p>Back to shopping?</p></a>
             </div>
         </div>
@@ -98,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <div class="final_click">
+        <div id="final_click">
             <p>Pay 0</p>
         </div>
     </div>

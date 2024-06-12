@@ -707,6 +707,15 @@
     justify-content: space-evenly;
 }
 
+@media all and (max-width: 1000px) {
+    .your_orders_main {
+        flex-direction: column;
+        margin-left: 150px;
+        gap: 50px;
+        margin-bottom: 100px;
+    }
+}
+
 .your_orders_right {
     width: 500px;
 }
@@ -846,7 +855,7 @@
     margin-bottom: 20px;
 }
 
-.final_click {
+#final_click {
     display: flex;
     justify-content: center;
     background-color: #39BAE2;
@@ -867,7 +876,7 @@
     margin-left: 25%;
 }
 
-.final_click p {
+#final_click p {
     color: aliceblue;
 }
 
@@ -904,4 +913,24 @@
     text-decoration: none;
     color: #000000;
     font-size: 20px;
+}
+
+#trash {
+    display: flex;
+}
+
+#trash2 {
+    display: none;
+}
+
+#trash3 {
+    display: none;
+}
+
+#trash4 {
+    display: none;
+}
+
+#trash5 {
+    display: none;
 }
