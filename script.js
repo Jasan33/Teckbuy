@@ -134,3 +134,9 @@ function card() {
     x.style.display = "none";
   }
 }
+
+function Iphone_cart() {
+  let x = document.getElementById("/order.Iphone_checkout");
+  console.log("hi")
+  x.style.display = "block";
+}
