@@ -12,4 +12,5 @@ to working machines at home.
 
 ## Website resources
 
-This website uses simple HTML, CSS and JS and alongside that it also uses the github version to be public
+This website uses simple HTML, CSS and JS and alongside that it also uses the github version to be public.
+More spesificly the backend part uses localstorage to operate
